@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>نظام التعليقات</title>
+</head>
+<body>
+    <div class="form">
+        <form action=" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class="form1">
+            <p>
+                الاسم الأول<br>
+                <input type="text" name="fname" id="fname" required>
+            </p> 
+            <p>
+                الاسم الأخير<br>
+                <input type="text" name="lname" id="lname" required>
+            </p>
+            <p>
+                التعليق<br>
+                <textarea name="comment" id="comment" required></textarea>
+            </p>
+            <button type="submit" name="submit">نشر</button>
+        </form>
+
+        <!-- <?php
+        // 9. عرض التعليقات
+        $con = mysqli_connect("localhost", "root", "", "magazine"); // اتصال قاعدة البيانات
+        if ($con) {
+            $result = mysqli_query($con, "SELECT * FROM comment ORDER BY id DESC");
+            if ($result) {
+                echo "<table class='comtable'>
+                        <tr>
+                            <th>الاسم الأول</th>
+                            <th>الاسم الأخير</th>
+                            <th>التعليق</th>
+                        </tr>";
+                
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "<tr>
+                            <td>" . htmlspecialchars($row['fname']) . "</td>
+                            <td>" . htmlspecialchars($row['lname']) . "</td>
+                            <td>" . htmlspecialchars($row['comment']) . "</td>
+                          </tr>";
+                }
+                echo "</table>";
+            } else {
+                echo "<p>لا توجد تعليقات لعرضها.</p>";
+            }
+        } else {
+            echo "<p>خطأ في الاتصال بقاعدة البيانات.</p>";
+        }
+        ?> -->
+    </div> 
+</body>
+</html>
