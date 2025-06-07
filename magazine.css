@@ -1,0 +1,159 @@
+/* تحسين الخلفية ونظام الألوان */
+body {
+   background-color: #f4f6f9;
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+.title {
+   color: white;
+   text-align: center;
+   background-color: #0047ab;
+   padding: 25px;
+   font-size: 28px;
+   font-weight: bold;
+   border-bottom: 4px solid #002d73;
+   position: relative;
+}
+
+.Writer {
+   color: #002d73;
+   font-style: italic;
+   text-align: center;
+   font-size: 16px;
+   margin-top: 8px;
+}
+
+.sub-title {
+   color: #6a0dad;
+   text-align: center;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+p {
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   line-height: 1.6;
+   color: #333;
+}
+
+/************ Header Section ************/
+.div1 {
+   background-color: #002d73;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+   height: 150px;
+   border-bottom: 4px solid #001a4d;
+   border-radius: 0 0 15px 15px;
+}
+
+.div1 img {
+   width: 150px;
+}
+
+.div1 h1 {
+   flex-grow: 1;
+   text-align: center;
+   margin: 0;
+   font-size: 24px;
+}
+
+.div1 button {
+   width: 160px;
+   background-color: white;
+   color: #002d73;
+   border: 2px solid #001a4d;
+   padding: 10px;
+   cursor: pointer;
+   border-radius: 8px;
+   font-weight: bold;
+   transition: 0.3s;
+}
+
+.div1 button:hover {
+   background-color: #0047ab;
+   color: white;
+}
+
+/************ Navigation Bar ************/
+.div2 {
+   background-color: #0047ab;
+   height: 55px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   margin: 10px;
+}
+
+.div2 ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+}
+
+.div2 ul li {
+   padding: 15px 25px;
+   color: white;
+   font-weight: bold;
+   transition: 0.3s;
+}
+
+.div2 a {
+   color: white;
+   text-decoration: none;
+   font-size: 18px;
+   transition: 0.3s;
+}
+
+.div2 a:hover {
+   font-size: 20px;
+   color: #ffcc00;
+}
+
+/************ Content Sections ************/
+.div3, .edunation, .brunch, .our, .care, .quit, .potry, .tips, .form, .div5, .div6 {
+   padding: 20px;
+   margin: 20px;
+   background-color: white;
+   border-radius: 12px;
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/************ Forms and Inputs ************/
+.form1, .comtable {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   border: 1px solid #ccc;
+   padding: 22px;
+   border-radius: 12px;
+   background-color: #f9f9f9;
+   width: 360px;
+   margin: auto;
+}
+
+button:hover {
+   background-color: #002d73;
+   color: white;
+   border: 2px solid #001a4d;
+}
+
+/************ Footer ************/
+.div5 {
+   background-color: #0047ab;
+   text-align: center;
+   padding: 25px;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   border-top: 4px solid #002d73;
+   border-radius: 15px 15px 0 0;
+}
